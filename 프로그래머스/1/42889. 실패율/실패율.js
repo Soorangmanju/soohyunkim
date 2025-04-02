@@ -1,6 +1,7 @@
-const solution = (N, stages) => {
-  const stageFailed = [];
-  let playersRemaining = stages.length;
+const solution = (N,stages)=>{
+    const stageFailed= [];
+    let playersRemaining = stages.length;
+
 
   for (let i = 1; i <= N; i++) {
     const currentStagePlayers = stages.filter(stage => stage === i).length;
